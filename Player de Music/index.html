@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Projeto Player Music</title>
+</head>
+<body>
+    <img src="Img/BinksSake.jpg">
+    <div class="descrisao">
+        <h2>Bink's no Sake </h2>
+        <i>One Piece</i>
+    </div>
+    <div class="duracao"><!--Div de duração-->
+        <div class="barra">
+            <progress value="0"max="1"></progress>
+            <div class="ponto"></div>
+        </div>
+    </div>
+    <div class="tempo">
+        <p class="inicio">0:00</p>
+        <p class="fim">3:40</p>
+    </div>
+    <div class="player">
+        <!--
+            Os tamanhos dos icones do fontawesome podem ser alterados:
+            <i class="fas fa-code fa-xs"></i> -> 0  -- Menor
+            <i class="fas fa-code fa-sm"></i> -> 1
+            <i class="fas fa-code fa-lg"></i> -> 2
+            <i class="fas fa-code fa-2x"></i> -> 3
+            <i class="fas fa-code fa-3x"></i> -> 4
+            <i class="fas fa-code fa-5x"></i> -> 5
+            <i class="fas fa-code fa-7x"></i> -> 6
+            <i class="fas fa-code fa-10x"></i> -> 7 -- Maior
+            Para maiores duvidas consultar: https://www.treinaweb.com.br/blog/css-dominando-o-font-awesome
+            
+            o tamano foi implementado no css
+        -->
+        <i class="fas fa-step-backward anterior"></i>
+        <i class="fas fa-play-circle botao-play"></i>     <!--Classes renomeadas-->
+        <i class="fas fa-stop-circle botao-pause"></i>
+        <i class="fas fa-step-forward proxima"></i>
+    </div>
+    <audio src="Music/Bink s no Sake.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

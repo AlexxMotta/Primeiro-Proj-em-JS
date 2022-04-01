@@ -1,0 +1,82 @@
+body,html{
+    margin:0;
+    padding:0;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+    color: #ddd;
+    font-family: 'Montserrat',sans-serif;
+}
+
+img{
+    width:  300px;
+    height: 300px;
+}
+
+.descrisao{
+    width: 300px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+
+.barra{
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+progress{/*tag*/
+    height: 6px;
+    width: 0%; /*percentual de carregamento da barra*/
+    background-color: #333;
+}
+
+.ponto{
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%; /*Circulo perfeito*/
+    margin-left: -10px;/*Movimento a esquerda*/
+}
+
+.tempo{
+    display: flex; /*Display comum que deve ser declarado pra que varias outras funcoes funcionem*/
+    width: 300px;
+    justify-content: space-between;/*Afasta o tempo inicial do tempo final (maximo possivel)*/
+}
+/**/
+.player{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.botao-play, .botao-pause{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.anterior,.proxima{
+    font-size: 40px;
+    cursor: pointer;
+}
+.botao-pause{
+    display: none;
+}
+/*EU ESTAVA NO MINUTO 29...*/
